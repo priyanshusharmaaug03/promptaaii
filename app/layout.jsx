@@ -1,16 +1,28 @@
 import "@styles/globals.css";
 
-const layout = ({ children }) => {
-  return (
-    <html lang="en">
-      <body>
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
+
+export const metadata = {
+  title: "Promptaai",
+  description: "Discover & Share AI Prompts",
+};
+
+const RootLayout = ({ children }) => (
+  <html lang="en">
+    <body>
+      <Provider>
         <div className="main">
           <div className="gradient" />
         </div>
-      </body>
-      <main className="app">{children}</main>
-    </html>
-  );
-};
 
-export default layout;
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
+      </Provider>
+    </body>
+  </html>
+);
+
+export default RootLayout;
