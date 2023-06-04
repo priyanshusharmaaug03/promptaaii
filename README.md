@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PROMPTAAI
+AI Prompt Generator is a Next.js project that allows users to post prompts to be used on AI websites. I made this project in order to get started with next js with the help of  [@adrianhajdin](https://github.com/adrianhajdin)
+<br/>
 
-## Getting Started
+## Features
 
-First, run the development server:
+* Users can create an account and log in.
+* Authenticated users can post prompts to the platform.
+* Prompts can be viewed by other users.
+* The platform is built using Next.js, providing a fast and efficient user experience.
+* It uses MongoDb to store all the prompts, ensuring persistence of prompts and user information.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Here are some screenshots of the project - <br/>
+![image](https://github.com/priyanshusharmaaug03/promptaaii/assets/71705875/f2f32d0b-684b-437e-98dc-9593e2edde49)
+![image](https://github.com/priyanshusharmaaug03/promptaaii/assets/71705875/022a64c0-a2cf-4361-b797-f26139f75ff4)
+![image](https://github.com/priyanshusharmaaug03/promptaaii/assets/71705875/b2aa6b4b-3795-4d78-8083-451b5ca78d9b)
+![image](https://github.com/priyanshusharmaaug03/promptaaii/assets/71705875/78f8b161-3550-4a26-b063-02963af03180)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Here is the working project [Promptaai](https://promptaaii.vercel.app/)
