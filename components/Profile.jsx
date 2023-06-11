@@ -1,12 +1,28 @@
+import Image from "next/image";
 import PromptCard from "./PromptCard";
-const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
+const Profile = ({ name, image, desc, data, handleEdit, handleDelete }) => {
   return (
     <section className="w-full">
-      <h1 className="head_text tex-left">
-        <span className="blue_gradient">{name}</span> Profile
-      </h1>
-      <p className="desc text-left">{desc}</p>
-      <div className="mt-10 prompt_layout">
+      <div className="flex justify-around items-center flex-col">
+        <div>
+          {image && (
+            <Image
+              src={image}
+              alt="user image"
+              width={120}
+              height={120}
+              className="rounded-full object-contain lazy"
+            />
+          )}
+        </div>
+        <div>
+          <h1 className="text-left text-center text-4xl ">
+            <span className="blue_gradient">{name}</span>
+          </h1>
+          <p className="desc text-left text-center">{desc}</p>
+        </div>
+      </div>
+      <div className="mt-10 prompt_layout flex justify-center items-center flex-wrap">
         {data.map((post) => (
           <PromptCard
             key={post._id}

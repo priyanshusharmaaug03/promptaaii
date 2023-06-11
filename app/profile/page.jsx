@@ -37,7 +37,7 @@ const MyProfile = () => {
   return (
     <Profile
       name="My"
-      desc="welcome to your persolized prifle page"
+      desc="Welcome to your persolized profile page"
       data={posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
